@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FWI Prediction</h1>
+    <form action="/predictdata" method="post">
+        <input type="text" name="Temp" placeholder="Temperature">
+        <input type="text" name="RH" placeholder="RH">
+        <input type="text" name="Ws" placeholder="Ws">
+        <input type="text" name="Rain" placeholder="Rain">
+        <input type="text" name="FFMC" placeholder="FFMC">
+        <input type="text" name="DMC" placeholder="DMC">
+        <input type="text" name="ISI" placeholder=""ISI>
+        <input type="text" name="Classes" placeholder="Classes">
+        <input type="text" name="Region" placeholder="Region">
+
+        <button type="submit">Predict</button>
+
+
+    </form>
+    <h2>The FWI Prediction is {{results}}</h2>
+</body>
+</html>
